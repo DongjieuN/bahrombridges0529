@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myRv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/gift_photo"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginVertical="19dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/result_teaset1_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gift_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineHeight="12sp"
+        android:maxLines="1"
+        android:text="000님을 위한 패션아이템"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/gift_remove_btn"
+        app:layout_constraintStart_toEndOf="@+id/gift_photo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="3dp"
+        android:lineHeight="12.1dp"
+        android:text="wonder visitor 볼캡"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/gift_photo"
+        app:layout_constraintTop_toBottomOf="@id/gift_category" />
+
+    <TextView
+        android:id="@+id/gift_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:text="12,000"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/gift_photo"
+        app:layout_constraintTop_toBottomOf="@+id/gift_name" />
+
+    <ImageButton
+        android:id="@+id/gift_remove_btn"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/ic_remove"
+        app:layout_constraintBottom_toBottomOf="@+id/gift_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gift_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

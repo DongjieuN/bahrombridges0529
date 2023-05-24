@@ -1,0 +1,171 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/my_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="151dp"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="00님의 선물 보따리"
+            android:textAppearance="@style/some_id"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/my_layout"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            android:background="#F13A43"
+            app:layout_constraintTop_toBottomOf="@+id/my_title_tv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_gift_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@+id/my_layout"
+            app:layout_constraintLeft_toLeftOf="@id/my_layout"
+            app:layout_constraintRight_toRightOf="@id/my_layout"
+            app:layout_constraintStart_toStartOf="@id/my_layout"
+            app:layout_constraintTop_toTopOf="@id/my_layout"
+            tools:listitem="@layout/item_my_recycler" />
+
+        <ImageButton
+            android:id="@+id/my_setting_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/ic_settings"
+            app:layout_constraintBottom_toBottomOf="@id/my_title_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
+            app:layout_constraintStart_toEndOf="@id/my_title_tv"
+            app:layout_constraintTop_toTopOf="@+id/my_title_tv" />
+
+        <View
+            android:id="@+id/my_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_layout">
+        </View>
+
+        <TextView
+            android:id="@+id/my_about_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="216dp"
+            android:text="ABOUT 어때"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_layout" />
+
+        <View
+            android:id="@+id/my_line_view"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="236dp"
+            android:background="#6C6C6C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_about_tv" />
+
+        <TextView
+            android:id="@+id/my_user_info_edit_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="255dp"
+            android:text="회원정보 수정"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_line_view" />
+
+        <TextView
+            android:id="@+id/user_notice_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="공지사항"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/my_user_info_edit_tv"
+            app:layout_constraintStart_toStartOf="@id/my_user_info_edit_tv"
+            app:layout_constraintTop_toBottomOf="@+id/my_user_info_edit_tv" />
+
+        <TextView
+            android:id="@+id/my_customer_center_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="고객센터"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/user_notice_tv"
+            app:layout_constraintStart_toStartOf="@id/user_notice_tv"
+            app:layout_constraintTop_toBottomOf="@id/user_notice_tv" />
+
+        <Button
+            android:id="@+id/my_log_out_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="@color/yellow_COR2"
+            android:fontFamily="@font/inter_medium"
+            android:stateListAnimator="@null"
+            android:text="Log out"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_customer_center_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

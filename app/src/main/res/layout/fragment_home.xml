@@ -1,0 +1,144 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 상단 배너 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_banner_vp"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            app:layout_constraintBottom_toTopOf="@+id/home_banner_tb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/home_banner_tb"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/white_COR3"
+            app:layout_constraintBottom_toTopOf="@+id/home_category_tb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_banner_vp"
+            app:tabIndicatorColor="@color/yellow_COR2"
+            app:tabIndicatorGravity="stretch"
+            app:tabMode="fixed" />
+
+        <!-- 카테고리 (생일, 연인, 부모님, 가벼운 선물, 럭셔리) -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/home_category_tb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_banner_tb"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorFullWidth="false"
+            app:tabMinWidth="0dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabRippleColor="#00ff0000"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextAppearance="@style/HomeCategoryTabLayout_Theme"
+            app:tabTextColor="#D9D9D9" />
+
+        <View
+            android:id="@+id/home_move_btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white_COR3"
+            app:layout_constraintBottom_toTopOf="@+id/home_category_vp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_category_tb" />
+
+        <TextView
+            android:id="@+id/home_sub_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="어떤 선물을 준비하고 계신가요?"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_category_tb" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/home_gift_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/home_move_btn_shape"
+            android:backgroundTint="@color/red_COR1"
+            android:drawableLeft="@drawable/home_gift_btn_icon_custom"
+            android:foreground="?selectableItemBackground"
+            android:includeFontPadding="false"
+            android:minHeight="34dp"
+            android:paddingStart="17dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="17dp"
+            android:paddingBottom="5dp"
+            android:text="쉿! 특별함을\n더해줄 비밀선물"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/home_move_btn_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_sub_title_tv" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/home_taste_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/home_move_btn_shape"
+            android:backgroundTint="@color/yellow_COR2"
+            android:drawableLeft="@drawable/home_taste_btn_icon_custom"
+            android:drawablePadding="16dp"
+            android:foreground="?selectableItemBackground"
+            android:includeFontPadding="false"
+            android:minHeight="34dp"
+            android:paddingStart="17dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="17dp"
+            android:paddingBottom="5dp"
+            android:text="뭐가 필요해?\n취향저격 선물"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/home_move_btn_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/home_gift_btn"
+            app:layout_constraintTop_toBottomOf="@+id/home_sub_title_tv" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_category_vp"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_gift_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
