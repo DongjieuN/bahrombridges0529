@@ -48,33 +48,33 @@ class QuestionFragment : Fragment() {
                     //위에 답 클릭
                     resultS += "0"
                     questionProgressTv.text = "2/5"
-                    questionContentTv.text = "휴일을 어떻게 보내나요?"
-                    questionAnswerTopBtn.text = "집에서 이것저것 하면서 논다"
-                    questionAnswerBottomBtn.text = "밖에서 여기저기 다니면서 논다"
+                    questionContentTv.text = "당신이 휴일을\n보내는 방법은?"
+                    questionAnswerTopBtn.text = "집이 좋아!\n 집콕하면서 영화 시청"
+                    questionAnswerBottomBtn.text = "밖이 좋아!\n 친구들과 함께 외출"
                 }
                 50 -> {
                     //위에 답 클릭
                     resultS += "0"
                     questionProgressTv.text = "3/5"
-                    questionContentTv.text = "운동을 좋아하나요?"
-                    questionAnswerTopBtn.text = "단백질 얼마 들어있어?를 외치는 운동인"
-                    questionAnswerBottomBtn.text = "숨쉬기 운동은 잊지 않는 허약인"
+                    questionContentTv.text = "건강에 얼마나\n관심이 있나요?"
+                    questionAnswerTopBtn.text = "관심 多\n 아무리 바빠도 운동은 꼭!"
+                    questionAnswerBottomBtn.text = "관심 少\n 숨쉬는 것도 운동이야.."
                 }
                 75 -> {
                     //위에 답 클릭
                     resultS += "0"
                     questionProgressTv.text = "4/5"
-                    questionContentTv.text = "친구는 평소에"
-                    questionAnswerTopBtn.text = "없는 것이 없는 보부상 스타일"
-                    questionAnswerBottomBtn.text = "있는 것이 없는 미니멀 리스트"
+                    questionContentTv.text = "what's in\nmy bag?"
+                    questionAnswerTopBtn.text = "바리바리스타\n 일단 필요할 수 있으니 다 챙겨"
+                    questionAnswerBottomBtn.text = "가방이 필요해?\n 핸드폰만 있으면 충분"
                 }
                 100 -> {
                     //위에 답 클릭
                     resultS += "0"
                     questionProgressTv.text = "5/5"
-                    questionContentTv.text = "친구의 식성은"
-                    questionAnswerTopBtn.text = "진골 한국인 한식파"
-                    questionAnswerBottomBtn.text = "폰 외국인 양식파"
+                    questionContentTv.text = "나의 음식 취향은?"
+                    questionAnswerTopBtn.text = "한국인은 밥심\n 한식파"
+                    questionAnswerBottomBtn.text = "밥보다는 빵\n 양식파"
 
                     questionAnswerTopBtn.setOnClickListener {
                         //위에 답 클릭
@@ -109,34 +109,34 @@ class QuestionFragment : Fragment() {
                     //아래 답 클릭
                     resultS += "1"
                     questionProgressTv.text = "2/5"
-                    questionContentTv.text = "휴일을 어떻게 보내나요?"
-                    questionAnswerTopBtn.text = "집에서 이것 저것 하면서 논다"
-                    questionAnswerBottomBtn.text = "밖에서 여기저기 다니면서 논다"
+                    questionContentTv.text = "당신이 휴일을\n보내는 방법은?"
+                    questionAnswerTopBtn.text = "집이 좋아!\n 집콕하면서 영화 시청"
+                    questionAnswerBottomBtn.text = "밖이 좋아!\n 친구들과 함께 외출"
                 }
                 50 -> {
                     //아래 답 클릭
                     resultS += "1"
                     questionProgressTv.text = "3/5"
-                    questionContentTv.text = "운동을 좋아하나요?"
-                    questionAnswerTopBtn.text = "단백질 얼마 들어있어?를 외치는 운동인"
-                    questionAnswerBottomBtn.text = "숨쉬기 운동은 잊지 않는 허약인"
+                    questionContentTv.text = "건강에 얼마나\n관심이 있나요?"
+                    questionAnswerTopBtn.text = "관심 多\n 아무리 바빠도\n운동은 꼭!"
+                    questionAnswerBottomBtn.text = "관심 少\n 숨쉬는 것도 운동이야.."
 
                 }
                 75 -> {
                     //아래 답 클릭
                     resultS += "1"
                     questionProgressTv.text = "4/5"
-                    questionContentTv.text = "친구는 평소에 "
-                    questionAnswerTopBtn.text = "없는 것이 없는 보부상 스타일"
-                    questionAnswerBottomBtn.text = "있는 것이 없는 미니멀 리스트"
+                    questionContentTv.text = "what's in\nyour bag?"
+                    questionAnswerTopBtn.text = "바리바리스타\n 일단 필요할 수 있으니 다 챙겨"
+                    questionAnswerBottomBtn.text = "가방이 필요해?\n 핸드폰만 있으면 충분"
                 }
                 100 -> {
                     //아래 답 클릭
                     resultS += "1"
                     questionProgressTv.text = "5/5"
-                    questionContentTv.text = "친구의 식성은?"
-                    questionAnswerTopBtn.text = "진골 한국인 한식파"
-                    questionAnswerBottomBtn.text = "폰 외국인 양식파"
+                    questionContentTv.text = "나의 음식 취향은?"
+                    questionAnswerTopBtn.text = "한국인은 밥심\n 한식파"
+                    questionAnswerBottomBtn.text = "밥보다는 빵\n 양식파"
 
                     questionAnswerBottomBtn.setOnClickListener {
                         //아래 답 클릭

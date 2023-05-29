@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         true
     }
 
-    private val homeCategoryTab = arrayListOf("생일", "부모님", "가벼운 선물", "럭셔리", "연인")
+    private val homeCategoryTab = arrayListOf("식품", "생필품", "문구", "의류", "잡화")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -79,22 +79,22 @@ class HomeFragment : Fragment() {
         homeBannerAdapter.addFragment(
             HomeBannerFragment(
                 R.drawable.home_banner_img1,
-                "빛을 디자인하는 조명",
-                "일광전구_스며드는 빛의 매력"
+                "STORE 36.5",
+                "오프라인으로 만나보는 사회적 기업!"
             )
         )
         homeBannerAdapter.addFragment(
             HomeBannerFragment(
                 R.drawable.home_banner_img2,
-                "애주가를 위한 인생술",
-                "과실주_특별한 순간을 빛내는 맛"
+                "아름다운 가게",
+                "물건의 재사용과 순환을 통해 변화에 기여!"
             )
         )
         homeBannerAdapter.addFragment(
             HomeBannerFragment(
                 R.drawable.home_banner_img3,
-                "향기로 완성하는 무드",
-                "금목서 향수_달빛을 닮은 달콤한 꽃향기"
+                "아름다운 가게 ",
+                "사회의 생태적, 친환경적 변화에 기여!"
             )
         )
 

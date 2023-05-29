@@ -44,6 +44,6 @@ class TakerInfoSecondFragment : Fragment() {
         var pref = this.activity?.getPreferences(0)
         var name = pref?.getString("friendName", "")
 
-        takerInfoSecondTitleTv.text = name + "님을 위한 \n선물 기본 정보를 입력해주세요"
+        takerInfoSecondTitleTv.text = name + "님 맞춤 ITEM 추천을 위해\n정보를 입력해주세요"
     }
 }
