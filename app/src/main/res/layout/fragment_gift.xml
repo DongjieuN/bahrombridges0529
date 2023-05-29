@@ -68,7 +68,7 @@
             android:layout_marginTop="21dp"
             android:layout_marginBottom="31dp"
             android:background="@drawable/gift_and_taste_move_btn_shape"
-            android:drawableLeft="@drawable/gift_btn_icon_custom"
+            android:drawableLeft="@drawable/all_look_btn_shape"
             android:drawablePadding="16dp"
             android:foreground="?selectableItemBackground"
             android:lineHeight="14.52dp"

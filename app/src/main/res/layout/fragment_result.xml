@@ -182,7 +182,7 @@
                         android:background="#B2F3E61E"
                         android:padding="11dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/save_result_btn_img"
+                        android:src="@drawable/all_look_btn_shape"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/again_btn"
                         app:layout_constraintStart_toEndOf="@+id/all_btn"
