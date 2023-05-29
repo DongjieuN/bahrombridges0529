@@ -22,11 +22,7 @@ class RegisterPageActivity : AppCompatActivity() {
     lateinit var registerPassword: EditText
     lateinit var registerRePassword: EditText
     lateinit var registerPasswordMismatch: TextView
-    lateinit var registerAllAgreeCb: CheckBox
-    lateinit var registerFirstCb: CheckBox
-    lateinit var registerSecondCb: CheckBox
-    lateinit var registerThirdCb: CheckBox
-    lateinit var registerChoiceCb: CheckBox
+
 
     // db
     lateinit var dbManager: DBManager
@@ -62,21 +58,9 @@ class RegisterPageActivity : AppCompatActivity() {
         }
 
         // 전체 동의 체크박스 클릭
-        registerAllAgreeCb.setOnClickListener {
-            if (registerAllAgreeCb.isChecked) {
-                registerFirstCb.isChecked = true
-                registerSecondCb.isChecked = true
-                registerThirdCb.isChecked = true
-                registerChoiceCb.isChecked = true
-            } else {
-                registerAllAgreeCb.isChecked = false
-                registerFirstCb.isChecked = false
-                registerSecondCb.isChecked = false
-                registerThirdCb.isChecked = false
-                registerChoiceCb.isChecked = false
-            }
 
-        }
+
+
 
     }
 

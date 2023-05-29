@@ -45,22 +45,22 @@ class OnBoardingActivity : AppCompatActivity() {
 
         onBoardingVPAdapter.addFragment(
             OnBoardingFragment(
-                "질문지를 통해 선물",
+                "질문지를 통해 사회적 기업",
                 "추천받기",
                 R.drawable.on_boarding_first_img
             )
         )
         onBoardingVPAdapter.addFragment(
             OnBoardingFragment(
-                "추천선물 리스트",
+                "추천 사회적 기업 물품",
                 "모아보기",
                 R.drawable.on_boarding_sec_img
             )
         )
         onBoardingVPAdapter.addFragment(
             OnBoardingFragment(
-                "마음을 전할 때",
-                "이거 어때?",
+                "기부와 소비를 한번에!",
+                "BRIDGES",
                 R.drawable.on_boarding_last_img
             )
         )

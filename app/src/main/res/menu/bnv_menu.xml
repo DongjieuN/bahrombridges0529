@@ -8,11 +8,11 @@
     <item
         android:id="@+id/giftFragment"
         android:icon="@drawable/ic_bnv_gift"
-        android:title="비밀선물" />
+        android:title="해시태그" />
     <item
         android:id="@+id/tasteFragment"
         android:icon="@drawable/ic_bnv_taste"
-        android:title="취향선물" />
+        android:title="해시태그" />
     <item
         android:id="@+id/myFragment"
         android:icon="@drawable/ic_bnv_my"
