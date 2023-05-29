@@ -63,7 +63,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/gift_recommend_btn"
             android:layout_width="0dp"
-            android:layout_height="105dp"
+            android:layout_height="115dp"
             android:layout_marginStart="280dp"
             android:layout_marginEnd="100dp"
             android:layout_marginTop="50dp"

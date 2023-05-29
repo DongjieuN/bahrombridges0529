@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         true
     }
 
-    private val homeCategoryTab = arrayListOf("생일", "부모님", "가벼운 선물", "럭셔리", "연인")
+    private val homeCategoryTab = arrayListOf("식품", "생필품", "문구", "의류", "잡화")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
