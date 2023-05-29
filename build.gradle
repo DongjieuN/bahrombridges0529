@@ -18,7 +18,15 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        maven {
+            url 'https://naver.jfrog.io/artifactory/maven/'
+        }
+
     }
+
+
+
 }
 
 task clean(type: Delete) {

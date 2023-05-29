@@ -78,12 +78,14 @@ class MainActivity : AppCompatActivity() {
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
+
                 R.id.tasteFragment -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, TasteFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
+
                 R.id.myFragment -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, MyFragment())
