@@ -9,20 +9,5 @@
             android:gravity="top"
             android:src="@drawable/app_logo_img" />
     </item>
-    <item
-        android:width="230dp"
-        android:gravity="center_horizontal"
-        android:top="100dp">
-        <bitmap
-            android:gravity="center"
-            android:src="@drawable/splash_center_img" />
-    </item>
-    <item
-        android:width="81dp"
-        android:bottom="40dp"
-        android:gravity="center_horizontal">
-        <bitmap
-            android:gravity="bottom"
-            android:src="@drawable/splash_bottom_img" />
-    </item>
+
 </layer-list>
