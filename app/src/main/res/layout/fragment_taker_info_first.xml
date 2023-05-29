@@ -71,7 +71,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/taker_info_first_edt_border"
         android:hint="이름을 입력해주세요.(별명도 좋습니다.)"
@@ -85,7 +84,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taker_info_first_name_tv" />
+        tools:layout_editor_absoluteY="308dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/taker_info_first_next_btn"
@@ -94,7 +93,7 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="22dp"
         android:background="@drawable/taker_info_first_btn_shape"
-        android:backgroundTint="@color/yellow_COR2"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/inter_medium"
         android:foreground="?selectableItemBackground"
         android:includeFontPadding="false"
@@ -102,7 +101,7 @@
         android:paddingTop="12.48dp"
         android:paddingBottom="12.48dp"
         android:text="다음"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
