@@ -13,7 +13,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="167dp"
         android:lineHeight="24sp"
-        android:text="마음을 전할 분의 \n정보를 알려주세요."
+        android:text="마음을 전할 분의 \n정보를 알려주세요!"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="20sp"
