@@ -62,10 +62,10 @@ class ProductLuxuryFragment : Fragment() {
 
         // 금주의 이거 어때? 데이터 리스트
         weekProductData.apply {
-            add(WeekProduct("DIOR", "[각인/선물포장] 립 글로우", R.drawable.product_list_dior_img))
-            add(WeekProduct("젠틀몬스터", "릭 01", R.drawable.product_list_sunglasses_img))
-            add(WeekProduct("판도라", "신탄생석 참 목걸이세트", R.drawable.product_list_pandora_img))
-            add(WeekProduct("샤넬", "블루 드 샤넬 오 드 빠르펭 50ml", R.drawable.product_list_chanel_img))
+            add(WeekProduct("DIOR", "[각인/선물포장] 립 글로우", R.drawable.product_list_bag_img))
+            add(WeekProduct("젠틀몬스터", "릭 01", R.drawable.product_list_bag_img))
+            add(WeekProduct("판도라", "신탄생석 참 목걸이세트", R.drawable.product_list_bag_img))
+            add(WeekProduct("샤넬", "블루 드 샤넬 오 드 빠르펭 50ml", R.drawable.product_list_bag_img))
         }
 
         // 어댑터와 데이터 리스트 연결
