@@ -64,6 +64,24 @@
             app:layout_constraintTop_toBottomOf="@+id/my_layout">
         </View>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_gift_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@+id/my_layout"
+            app:layout_constraintLeft_toLeftOf="@id/my_layout"
+            app:layout_constraintRight_toRightOf="@id/my_layout"
+            app:layout_constraintStart_toStartOf="@id/my_layout"
+            app:layout_constraintTop_toTopOf="@id/my_layout"
+            tools:listitem="@layout/item_my_recycler"
+            />
+
         <TextView
             android:id="@+id/my_about_tv"
             android:layout_width="0dp"
