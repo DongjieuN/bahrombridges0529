@@ -33,7 +33,7 @@
         android:gravity="center_vertical"
         android:lineHeight="12sp"
         android:maxLines="1"
-        android:text="000님을 위한 패션아이템"
+        android:text="000님을 위한 물품 FROM 사회적기업"
         android:textColor="@color/black"
         android:textSize="10sp"
         android:textStyle="bold"
