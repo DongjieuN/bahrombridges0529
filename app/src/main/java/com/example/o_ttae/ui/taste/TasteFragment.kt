@@ -9,6 +9,7 @@ import com.example.o_ttae.R
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
 import com.naver.maps.map.overlay.Marker
+import com.naver.maps.map.overlay.OverlayImage
 import com.naver.maps.map.util.FusedLocationSource
 
 class TasteFragment : Fragment(), OnMapReadyCallback {
@@ -54,6 +55,7 @@ class TasteFragment : Fragment(), OnMapReadyCallback {
     override fun onMapReady(map: NaverMap) {
         naverMap = map
 
+
         val target = LatLng(37.624186, 127.079883)
         val target1 = LatLng(37.655223,127.061146)// Destination (Seoul)
         val cameraUpdate = CameraUpdate.scrollTo(target)
@@ -65,11 +67,14 @@ class TasteFragment : Fragment(), OnMapReadyCallback {
 
         val marker = Marker()
         marker.position = target
+        marker.icon = OverlayImage.fromResource(R.drawable.marker_icon) // 마커 아이콘 설정
         marker.map = naverMap
 
-        val marker1 = Marker()
-        marker1.position = target1
-        marker1.map = naverMap
+
+        val marker2 = Marker()
+        marker2.position = target1
+        marker.icon = OverlayImage.fromResource(R.drawable.marker_icon) // 마커 아이콘 설정
+        marker2.map = naverMap
 
 
     }
