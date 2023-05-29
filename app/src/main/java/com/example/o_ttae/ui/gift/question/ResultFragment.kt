@@ -79,13 +79,13 @@ class ResultFragment : Fragment() {
 
         // result로 조건문 작성 -> 결과지 세팅
         when (result) {
-            // 1. I, 집, 허약, 보부상, 한식 -> 보드게임
+            // 1. 어색, 집좋아, 허약, 보부상, 한식 -> 보드게임
             // 10100
             "10100" -> {
                 loadData()
 
                 // 보드게임
-                friendItem.text = "집에서 혼자 잘 노는 " + friendName + " 님을 위해\n" + "보드게임 어때?"
+                friendItem.text = "프로 집콕러 " + friendName + " 님을 위해\n" + "보드게임 어때?"
                 productName.text = "상프앙 / ARCHI MEMORY CARD GAME"
                 price.text = "13,000"
                 imgTemp = R.drawable.result_board_game1_img
