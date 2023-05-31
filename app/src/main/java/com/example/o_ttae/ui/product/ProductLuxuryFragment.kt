@@ -23,7 +23,7 @@ class ProductLuxuryFragment : Fragment() {
 
     private lateinit var productCategoryPriceTb: TabLayout
     lateinit var productCategoryPriceVp: ViewPager2
-    private val productCategoryTab = arrayListOf("전체", "1만원 이하", "2~4만원대", "5만원 이상")
+    private val productCategoryTab = arrayListOf("전체", "후원 및 기부", "일자리 창출", "취약계층 지원")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,10 +62,10 @@ class ProductLuxuryFragment : Fragment() {
 
         // 금주의 이거 어때? 데이터 리스트
         weekProductData.apply {
-            add(WeekProduct("DIOR", "[각인/선물포장] 립 글로우", R.drawable.product_list_bag_img))
-            add(WeekProduct("젠틀몬스터", "릭 01", R.drawable.product_list_bag_img))
-            add(WeekProduct("판도라", "신탄생석 참 목걸이세트", R.drawable.product_list_bag_img))
-            add(WeekProduct("샤넬", "블루 드 샤넬 오 드 빠르펭 50ml", R.drawable.product_list_bag_img))
+            add(WeekProduct("스프링샤인", "짜욱작가의 사막여우 티셔츠", R.drawable.product_list_fox_img))
+            add(WeekProduct("마마나스협동조합", "오가닉 천 유아슈트", R.drawable.product_list_kids_img))
+            add(WeekProduct("페어트레이드코리아", "스퀘어 가디건 블랙", R.drawable.product_list_cardigan_img))
+            add(WeekProduct("신호에이피엘", "특양면 오버핏 맨투맨", R.drawable.product_list_green_img))
         }
 
         // 어댑터와 데이터 리스트 연결

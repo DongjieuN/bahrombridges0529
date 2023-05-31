@@ -15,7 +15,7 @@ class ProductFragment : Fragment() {
     lateinit var productCategoryTb: TabLayout
     lateinit var productCategoryVp: ViewPager2
 
-    private val productCategoryTab = arrayListOf("식품", "생필품", "문구", "의류", "잡화")
+    private val productCategoryTab = arrayListOf("식품", "생필품", "잡화", "의류")
     private var resultTab: Int = 0
 
     override fun onCreateView(

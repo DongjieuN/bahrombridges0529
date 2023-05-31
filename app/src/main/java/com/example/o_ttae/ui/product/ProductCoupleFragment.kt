@@ -23,7 +23,7 @@ class ProductCoupleFragment : Fragment() {
 
     private lateinit var productCategoryPriceTb: TabLayout
     lateinit var productCategoryPriceVp: ViewPager2
-    private val productCategoryTab = arrayListOf("전체", "1만원 이하", "2~4만원대", "5만원 이상")
+    private val productCategoryTab = arrayListOf("전체", "후원 및 기부", "일자리 창출", "취약계층 지원")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -63,9 +63,9 @@ class ProductCoupleFragment : Fragment() {
         // 금주의 이거 어때? 데이터 리스트
         weekProductData.apply {
             add(WeekProduct("JW중외제약", "피톤케어360 차량용 방향제", R.drawable.product_list_air_freshener_img))
-            add(WeekProduct("터틀힙", "Lettering 벚꽃크림 케이크", R.drawable.product_list_cake_img))
+            add(WeekProduct("터틀힙", "Lettering 벚꽃크림 케이크", R.drawable.all_look_btn_shape))
             add(WeekProduct("DOOSI", "[생화] 피치살몬 꽃다발", R.drawable.producst_list_flower_img))
-            add(WeekProduct("하이미엘", "천연 꿀버터 뚱카롱(마카롱) 10구 선물패키지", R.drawable.product_list_macaroon_img))
+            add(WeekProduct("하이미엘", "천연 꿀버터 뚱카롱(마카롱) 10구 선물패키지", R.drawable.all_look_btn_shape))
         }
 
         // 어댑터와 데이터 리스트 연결

@@ -36,17 +36,17 @@ class LuxuryFragment : Fragment() {
         val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
 
         productData1.apply {
-            add(Product("DIOR1", "[각인/선물포장] 립 글로우", "47,000", R.drawable.all_look_btn_shape))
-            add(Product("젠틀몬스터", "릭 01", "259,000", R.drawable.all_look_btn_shape))
-            add(Product("판도라", "신탄생석 참 목걸이세트", "98,000", R.drawable.all_look_btn_shape))
-            add(Product("샤넬", "블루 드 샤넬 오 드 빠르펭 50ml", "127,000", R.drawable.all_look_btn_shape))
+            add(Product("스프링샤인", "짜욱작가의 사막여우 티셔츠", "23,000", R.drawable.product_list_fox_img))
+            add(Product("소이프", "1919 유관순 티셔츠", "28,000", R.drawable.product_list_1919_img))
+            add(Product("마마나스협동조합", "오가닉 천 유아슈트", "30,000", R.drawable.product_list_kids_img))
+            add(Product("소이프", "홀마핸 티셔츠 화이트", "28,000", R.drawable.product_list_white_img))
         }
 
         productData2.apply {
-            add(Product("DIOR2", "[각인/선물포장] 립 글로우", "47,000", R.drawable.all_look_btn_shape))
-            add(Product("젠틀몬스터", "릭 01", "259,000", R.drawable.all_look_btn_shape))
-            add(Product("판도라", "신탄생석 참 목걸이세트", "98,000", R.drawable.all_look_btn_shape))
-            add(Product("샤넬", "블루 드 샤넬 오 드 빠르펭 50ml", "127,000", R.drawable.all_look_btn_shape))
+            add(Product("페어트레이드코리아", "스퀘어 가디건 블랙", "96,600", R.drawable.product_list_cardigan_img))
+            add(Product("신호에이피엘", "특양면 오버핏 맨투맨", "22,000", R.drawable.product_list_green_img))
+            add(Product("다올협동조합", "올바른 순면 파자마 바지 남성/여성/커플", "19,900", R.drawable.product_list_pazamas_img))
+            add(Product("마마나스협동조합", "오가닉 천 파자마", "30,000", R.drawable.product_list_pants_img))
         }
         // 어댑터와 데이터 리스트 연결
         val homeLuxuryProductRVAdapter1 = ProductRVAdapter(productData1)

@@ -1,4 +1,4 @@
-package com.example.o_ttae.ui.product.price
+package com.example.o_ttae.ui.product.price // 후원 및 기부
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -29,17 +29,17 @@ class PriceOneFragment : Fragment() {
         priceOneProductRv2 = view.findViewById(R.id.price_product_rv2)
 
         productData1.apply {
-            add(Product("임페리얼1", "데니쉬버터쿠키셀렉션 500g(대용량)", "9,900", R.drawable.product_list_snack_img))
-            add(Product("클럽클리오", "페리페라 잉크 더 에어리벨벳 물복딱복", "7,200", R.drawable.product_list_tint_img))
-            add(Product("solful", "내열 이중유리컵 동물컵 글라스 280ml", "8,500", R.drawable.product_list_animal_cup_img))
-            add(Product("EGOIDSM", "미니 빔프로젝터 무드 세트", "9,800", R.drawable.product_list_beam_img))
+            add(Product("산들산들", "산들산들 생리대", "저소득청소년 생리대 후원", R.drawable.product_list_sandle_img))
+            add(Product("소이프", "버키버킷햇", "보육시설 청소년 자립 도움", R.drawable.product_list_bucket_img))
+            add(Product("담쟁이", "아이엠 디퓨저", "수익금 전액 발전기금 사용", R.drawable.product_list_defuser_img))
+            add(Product("마인드디자인", "생각하는 구슬 여자용", "전통 문화 컨텐츠 재가공", R.drawable.product_list_biz_img))
         }
 
         productData2.apply {
-            add(Product("임페리얼2", "데니쉬버터쿠키셀렉션 500g(대용량)", "9,900", R.drawable.product_list_snack_img))
-            add(Product("클럽클리오", "페리페라 잉크 더 에어리벨벳 물복딱복", "7,200", R.drawable.product_list_tint_img))
-            add(Product("solful", "내열 이중유리컵 동물컵 글라스 280ml", "8,500", R.drawable.product_list_animal_cup_img))
-            add(Product("EGOIDSM", "미니 빔프로젝터 무드 세트", "9,800", R.drawable.product_list_beam_img))
+            add(Product("동그라미 플러스", "맛있는 육포야", "장애인 직업 재활시설 운영 및 후원", R.drawable.product_list_yukpo_img))
+            add(Product("그라나다보호작업센터", "밸런스브라운", "장애인 직업 재활시설 운영 및 후원", R.drawable.product_list_bean_img))
+            add(Product("두리하나다울", "쿠키선물바구니(중)", "성인 중증발달장애인 자립 도움", R.drawable.product_list_cookie_img))
+            add(Product("소이프", "홀마핸 티셔츠 화이트", "보육시설 청소년 자립 도움", R.drawable.product_list_white_img))
         }
 
         // Set up the adapter and layout manager for priceProductRv1

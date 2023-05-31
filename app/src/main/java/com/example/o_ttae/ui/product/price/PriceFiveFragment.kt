@@ -1,4 +1,4 @@
-package com.example.o_ttae.ui.product.price
+package com.example.o_ttae.ui.product.price // 취약계층 지원
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -29,17 +29,17 @@ class PriceFiveFragment : Fragment() {
         priceFiveProductRv2 = view.findViewById(R.id.price_product_rv2)
 
         productData1.apply {
-            add(Product("모던포인트1", "원목 유선 플랜테리어 식물 무드등 LED", "55,000", R.drawable.product_list_mood_light_img))
-            add(Product("러쉬", "더티 보디 스프레이 200ml", "60,000", R.drawable.product_list_lush_img))
-            add(Product("말본골프", "Bucket 햇 WHITE", "99,000", R.drawable.product_list_hat_img))
-            add(Product("Apple", "에어팟 프로 (맥세이프 충전 케이스)", "269,000", R.drawable.product_list_airpot_img))
+            add(Product("마마나스협동조합", "오가닉 천 파자마", "비혼모 지원", R.drawable.product_list_pazamas_img))
+            add(Product("스프링샤인", "짜욱작가의 사막여우 티셔츠", "발달장애인 예술가 육성", R.drawable.product_list_fox_img))
+            add(Product("목화송이협동조합", "20 BOTTLES 워킹백", "취약계층 여성 생필품 지원", R.drawable.product_list_20_img))
+            add(Product("페어트레이드 코리아", "스퀘어 가디건 블랙", "공정무역", R.drawable.product_list_cardigan_img))
         }
 
         productData2.apply {
-            add(Product("모던포인트2", "원목 유선 플랜테리어 식물 무드등 LED", "55,000", R.drawable.product_list_mood_light_img))
-            add(Product("러쉬", "더티 보디 스프레이 200ml", "60,000", R.drawable.product_list_lush_img))
-            add(Product("말본골프", "Bucket 햇 WHITE", "99,000", R.drawable.product_list_hat_img))
-            add(Product("Apple", "에어팟 프로 (맥세이프 충전 케이스)", "269,000", R.drawable.product_list_airpot_img))
+            add(Product("아시아공정무역네트워크", "페어데이 생캐슈넛(250g)", "공정무역", R.drawable.product_list_nuts_img))
+            add(Product("마마나스협동조합", "오가닉 천 유아슈트", "비혼모 지원", R.drawable.product_list_kids_img))
+            add(Product("트립티", "트립티 원두 티백", "공정무역", R.drawable.product_list_tee_img))
+            add(Product("목화송이협동조합", "가벼운 방수앞치마", "취약계층 여성 생필품 지원", R.drawable.product_list_apron_img))
         }
 
         // Set up the adapter and layout manager for priceProductRv1

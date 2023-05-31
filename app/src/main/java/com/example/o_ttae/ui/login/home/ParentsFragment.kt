@@ -36,17 +36,17 @@ class ParentsFragment : Fragment() {
         val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
 
         productData1.apply {
-            add(Product("인사이디1", "휴대용 미니 마사지건 IMG-BP", "59,900", R.drawable.product_list_massage_gun_img))
-            add(Product("한우맘", "1등급 한우 선물세트 1.2kg", "79,000", R.drawable.product_list_meat_img))
-            add(Product("복순도가", "복순도가 손막걸리 935ml x 1병", "12,000", R.drawable.product_list_makgeolli_img))
-            add(Product("이너셋", "더 진한 홍삼 100스틱 10g x 100포", "44,900", R.drawable.product_list_red_ginseng_img))
+            add(Product("산들산들", "산들산들 생리대", "4,900", R.drawable.product_list_sandle_img))
+            add(Product("늘푸름보호작업장", "두루마리 휴지 50m", "6,050", R.drawable.product_list_tissue_img))
+            add(Product("엘리트프랜즈", "친환경 행주 에코 아프로 4개입", "11,000", R.drawable.product_list_dishcloth_img))
+            add(Product("오피스배재", "명장 불난로 손난로", "5,000", R.drawable.product_list_handwarmer_img))
         }
 
         productData2.apply {
-            add(Product("인사이디2", "휴대용 미니 마사지건 IMG-BP", "59,900", R.drawable.product_list_massage_gun_img))
-            add(Product("한우맘", "1등급 한우 선물세트 1.2kg", "79,000", R.drawable.product_list_meat_img))
-            add(Product("복순도가", "복순도가 손막걸리 935ml x 1병", "12,000", R.drawable.product_list_makgeolli_img))
-            add(Product("이너셋", "더 진한 홍삼 100스틱 10g x 100포", "44,900", R.drawable.product_list_red_ginseng_img))
+            add(Product("오피스배재", "3D 정전기 밀대 청소기 리필", "2,500", R.drawable.product_list_plunger_img))
+            add(Product("맘씨생활건강", "이공이공핸드워스", "5,000", R.drawable.product_list_handwash_img))
+            add(Product("담쟁이", "아이엠 디퓨저", "15,000", R.drawable.product_list_defuser_img))
+            add(Product("다함께", "휴대용 물티슈 10매 50세트", "42,500", R.drawable.product_list_wet_img))
         }
 
         // 어댑터와 데이터 리스트 연결

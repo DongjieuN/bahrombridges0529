@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         true
     }
 
-    private val homeCategoryTab = arrayListOf("식품", "생필품", "문구", "의류", "잡화")
+    private val homeCategoryTab = arrayListOf("식품", "생필품", "잡화", "의류")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -131,7 +131,7 @@ class HomeFragment : Fragment() {
 
     // Home 화면 상단 배너 - 페이지 변경
     fun setPage() {
-        if (currentPosition == 3) currentPosition = 0
+        if (currentPosition == 2) currentPosition = 0
         homeBannerVp.setCurrentItem(currentPosition, true)
         currentPosition += 1
     }

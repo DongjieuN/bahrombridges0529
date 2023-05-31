@@ -36,17 +36,17 @@ class LightGiftFragment : Fragment() {
         val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
 
         productData1.apply {
-            add(Product("대봉식품1", "둘이 함께 먹는 매일견과 20g x 60봉", "25,430", R.drawable.product_list_nut_img))
-            add(Product("경남제약", "카카오 레모나산 2g 100포", "17,450", R.drawable.product_list_lemona_img))
-            add(Product("캐릭터주방", "돌아온 스누피 댄스댄스 글라스잔 2P세트", "17,850", R.drawable.product_list_glass_img))
-            add(Product("원더커피", "더치커피 5종원두 혼합 100팩", "18,900", R.drawable.product_list_coffee_img))
+            add(Product("소이프", "버키버킷햇", "32,000", R.drawable.product_list_bucket_img))
+            add(Product("목화송이협동조합", "20 BOTTLES 워킹백", "12,000", R.drawable.product_list_20_img))
+            add(Product("마인드 디자인", "생각하는 구슬 여자용", "20,000", R.drawable.product_list_biz_img))
+            add(Product("목화송이협동조합", "가벼운 방수앞치마", "22,000", R.drawable.product_list_apron_img))
         }
 
         productData2.apply {
-            add(Product("대봉식품2", "둘이 함께 먹는 매일견과 20g x 60봉", "25,430", R.drawable.product_list_nut_img))
-            add(Product("경남제약", "카카오 레모나산 2g 100포", "17,450", R.drawable.product_list_lemona_img))
-            add(Product("캐릭터주방", "돌아온 스누피 댄스댄스 글라스잔 2P세트", "17,850", R.drawable.product_list_glass_img))
-            add(Product("원더커피", "더치커피 5종원두 혼합 100팩", "18,900", R.drawable.product_list_coffee_img))
+            add(Product("하이사이클", "커피자루 필통 케이스", "12,000", R.drawable.product_list_case_img))
+            add(Product("페어트레이드 코리아", "덤블링 미니 크로스백", "24,000", R.drawable.product_list_cross_img))
+            add(Product("소이프", "나무늘보 그립톡", "12,000", R.drawable.product_list_sloth_img))
+            add(Product("오피스메카", "컬러 에코백", "견적요청", R.drawable.product_list_color_img))
         }
 
         // 어댑터와 데이터 리스트 연결

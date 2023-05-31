@@ -36,17 +36,17 @@ class BirthdayFragment : Fragment() {
         val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
 
         productData1.apply {
-            add(Product("라이프 아카이브1", "라이프 아카이브 일회용 카메라", "20,120", R.drawable.product_list_film_img))
-            add(Product("코지테이블", "아이보리앤도트 머그잔", "8,400", R.drawable.product_list_cup_img))
-            add(Product("언폴드", "Copenhagen-bule 에코백", "9,800", R.drawable.product_list_bag_img))
-            add(Product("비비디", "드레스 퍼퓸 100ml", "8,950", R.drawable.product_list_perfume_img))
+            add(Product("동그라미플러스", "맛있는 육포야", "8,200", R.drawable.product_list_yukpo_img))
+            add(Product("그라나다보호작업센터", "밸런스브라운", "16,000", R.drawable.product_list_bean_img))
+            add(Product("누리봄사회적협동조합", "도담잡곡 누룽지", "6,000", R.drawable.product_list_nulungzi_img))
+            add(Product("비컴프렌즈", "Obong miel 꿀스틱", "13,000", R.drawable.product_list_honey_img))
         }
 
         productData2.apply {
-            add(Product("라이프 아카이브2", "라이프 아카이브 일회용 카메라", "20,120", R.drawable.product_list_film_img))
-            add(Product("코지테이블", "아이보리앤도트 머그잔", "8,400", R.drawable.product_list_cup_img))
-            add(Product("언폴드", "Copenhagen-bule 에코백", "9,800", R.drawable.product_list_bag_img))
-            add(Product("비비디", "드레스 퍼퓸 100ml", "8,950", R.drawable.product_list_perfume_img))
+            add(Product("트립티", "트립티 원두 티백", "6,000", R.drawable.product_list_tee_img))
+            add(Product("두리하나다울", "쿠키선물바구니(중)", "50,000", R.drawable.product_list_cookie_img))
+            add(Product("아시아공정무역네트워크", "페어데이 공정무역 생캐슈넛(250g)", "9,000", R.drawable.product_list_nuts_img))
+            add(Product("사랑의 일터", "미니쿠키 3종세트", "15,000", R.drawable.product_list_mini_img))
         }
 
         // 어댑터와 데이터 리스트 연결

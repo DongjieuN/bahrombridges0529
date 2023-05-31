@@ -1,4 +1,4 @@
-package com.example.o_ttae.ui.product.price
+package com.example.o_ttae.ui.product.price //일자리 창출
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -29,17 +29,17 @@ class PriceTwoFourFragment : Fragment() {
         priceTwoFourProductRv2 = view.findViewById(R.id.price_product_rv2)
 
         productData1.apply {
-            add(Product("양키캔들1", "우드윅 미니 캔들 + 루나 스몰 캔들워머 + 전구 2개", "29,900", R.drawable.product_list_candle_img))
-            add(Product("코튼랩", "수건선물세트 40수 8매", "44,000", R.drawable.product_list_towel_img))
-            add(Product("에이치앤프렌즈", "\"오둥이 입니다만\" 오둥이 모찌 바디필로우", "29,800", R.drawable.product_list_pillow_img))
-            add(Product("베리베리", "수제과일청 선물세트 (레몬청 + 자몽청)", "30,300", R.drawable.product_list_fruit_syrup_img))
+            add(Product("누리봄사회적협동조합", "도담잡곡누룽지", "중증장애인 일자리 제공", R.drawable.product_list_nulungzi_img))
+            add(Product("비컴프렌즈", "Obong miel 꿀스틱", "발달장애인 일자리 제공", R.drawable.product_list_honey_img))
+            add(Product("맘씨생활건강", "이공이공핸드워시", "취약계층 여성 일자리 제공", R.drawable.product_list_handwash_img))
+            add(Product("신호에이피엘", "특양면 오버핏 맨투맨", "취약계층 여성,장애인 일자리 제공", R.drawable.product_list_green_img))
         }
 
         productData2.apply {
-            add(Product("양키캔들2", "우드윅 미니 캔들 + 루나 스몰 캔들워머 + 전구 2개", "29,900", R.drawable.product_list_candle_img))
-            add(Product("코튼랩", "수건선물세트 40수 8매", "44,000", R.drawable.product_list_towel_img))
-            add(Product("에이치앤프렌즈", "\"오둥이 입니다만\" 오둥이 모찌 바디필로우", "29,800", R.drawable.product_list_pillow_img))
-            add(Product("베리베리", "수제과일청 선물세트 (레몬청 + 자몽청)", "30,300", R.drawable.product_list_fruit_syrup_img))
+            add(Product("늘푸름보호작업장", "두루마리 휴지 50m", "중증장애인 일자리 제공", R.drawable.product_list_tissue_img))
+            add(Product("엘리트프랜즈", "친환경 행주 에코 아프로 4개입", "친환경 & 취약계층 일자리 제공", R.drawable.product_list_dishcloth_img))
+            add(Product("오피스배재", "명장 불난로 손난로", "소외계층 고용 촉진 활동", R.drawable.product_list_handwarmer_img))
+            add(Product("다함께", "휴대용 물티슈 10매 50세트", "장애인 일자리 제공", R.drawable.product_list_wet_img))
         }
 
         // Set up the adapter and layout manager for priceProductRv1

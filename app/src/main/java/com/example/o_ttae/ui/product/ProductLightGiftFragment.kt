@@ -23,7 +23,7 @@ class ProductLightGiftFragment : Fragment() {
 
     private lateinit var productCategoryPriceTb: TabLayout
     lateinit var productCategoryPriceVp: ViewPager2
-    private val productCategoryTab = arrayListOf("전체", "1만원 이하", "2~4만원대", "5만원 이상")
+    private val productCategoryTab = arrayListOf("전체", "후원 및 기부", "일자리 창출", "취약계층 지원")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,10 +62,10 @@ class ProductLightGiftFragment : Fragment() {
 
         // 금주의 이거 어때? 데이터 리스트
         weekProductData.apply {
-            add(WeekProduct("대봉식품", "둘이 함께 먹는 매일견과 20g x 60봉", R.drawable.product_list_nut_img))
-            add(WeekProduct("경남제약", "카카오 레모나산 2g 100포", R.drawable.product_list_lemona_img))
-            add(WeekProduct("캐릭터주방", "돌아온 스누피 댄스댄스 글라스잔 2P세트", R.drawable.product_list_glass_img))
-            add(WeekProduct("원더커피", "더치커피 5종원두 혼합 100팩", R.drawable.product_list_coffee_img))
+            add(WeekProduct("소이프", "버키버키햇", R.drawable.product_list_bucket_img))
+            add(WeekProduct("페어트레이드 코리아", "덤블링 미니 크로스백", R.drawable.product_list_cross_img))
+            add(WeekProduct("목화송이협동조합", "20 BOTTLES 워킹백", R.drawable.product_list_20_img))
+            add(WeekProduct("하이사이클", "커피자루 필통 케이스", R.drawable.product_list_case_img))
         }
 
         // 어댑터와 데이터 리스트 연결

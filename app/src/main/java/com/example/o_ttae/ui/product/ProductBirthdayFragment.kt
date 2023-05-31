@@ -12,6 +12,7 @@ import com.example.o_ttae.ui.product.price.ProductPriceVPAdapter
 import com.example.o_ttae.R
 import com.example.o_ttae.data.model.WeekProduct
 import com.example.o_ttae.data.adapter.WeekProductRVAdapter
+import com.example.o_ttae.data.model.Product
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import java.util.ArrayList
@@ -23,7 +24,7 @@ class ProductBirthdayFragment : Fragment() {
 
     private lateinit var productCategoryPriceTb: TabLayout
     lateinit var productCategoryPriceVp: ViewPager2
-    private val productCategoryTab = arrayListOf("전체", "1만원 이하", "2~4만원대", "5만원 이상")
+    private val productCategoryTab = arrayListOf("전체", "후원 및 기부", "일자리 창출", "취약계층 지원")
 
 
     override fun onCreateView(
@@ -63,10 +64,10 @@ class ProductBirthdayFragment : Fragment() {
 
         // 금주의 이거 어때? 데이터 리스트
         weekProductData.apply {
-            add(WeekProduct("라이프 아카이브", "라이프 아카이브 일회용 카메라", R.drawable.product_list_film_img))
-            add(WeekProduct("코지테이블", "아이보리앤도트 머그잔", R.drawable.product_list_cup_img))
-            add(WeekProduct("언폴드", "Copenhagen-bule 에코백", R.drawable.product_list_bag_img))
-            add(WeekProduct("비비디", "드레스 퍼퓸 100ml", R.drawable.product_list_perfume_img))
+            add(WeekProduct("동그라미플러스", "맛있는 육포야", R.drawable.product_list_yukpo_img))
+            add(WeekProduct("그라나다보호작업센터", "밸런스브라운", R.drawable.product_list_bean_img))
+            add(WeekProduct("사랑의 일터", "미니쿠키 3종세트", R.drawable.product_list_mini_img))
+            add(WeekProduct("트립티", "트립티 원두 티백", R.drawable.product_list_tee_img))
         }
 
         // 어댑터와 데이터 리스트 연결

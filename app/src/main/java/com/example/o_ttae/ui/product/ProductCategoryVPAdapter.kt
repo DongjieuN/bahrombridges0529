@@ -8,15 +8,14 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 class ProductCategoryVPAdapter(childFragmentManager: FragmentManager, getLifecycle: Lifecycle) :
     FragmentStateAdapter(childFragmentManager, getLifecycle) {
 
-    override fun getItemCount(): Int = 5
+    override fun getItemCount(): Int = 4
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> ProductBirthdayFragment()     // 생일 카테고리
-            1 -> ProductParentsFragment()      // 부모님 카테고리
-            2 -> ProductLightGiftFragment()    // 가벼운 선물 카테고리
-            3 -> ProductLuxuryFragment()       // 럭셔리 카테고리
-            else -> ProductCoupleFragment()    // 연인 카테고리
+            0 -> ProductBirthdayFragment()     // 식품 카테고리
+            1 -> ProductParentsFragment()      // 생필품 카테고리
+            2 -> ProductLightGiftFragment()    // 잡화 선물 카테고리
+            else -> ProductLuxuryFragment()       // 의류 카테고리
         }
     }
 }
