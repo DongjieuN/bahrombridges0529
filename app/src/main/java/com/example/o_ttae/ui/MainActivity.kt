@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.example.o_ttae.data.db.DBManager
 import com.example.o_ttae.R
 import com.example.o_ttae.ui.gift.GiftFragment
-import com.example.o_ttae.ui.home.HomeFragment
+import com.example.o_ttae.ui.login.home.HomeFragment
 import com.example.o_ttae.ui.my.MyFragment
 import com.example.o_ttae.ui.taste.TasteFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView

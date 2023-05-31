@@ -11,13 +11,10 @@
 
         <TextView
             android:id="@+id/my_title_tv"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="151dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
             android:gravity="top"
             android:lineSpacingExtra="0sp"
             android:text="00님의 my page"
@@ -25,88 +22,73 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <FrameLayout
-            android:id="@+id/my_layout"
-            android:layout_width="match_parent"
-            android:layout_height="320dp"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/Grayscale_Blue"
-            app:layout_constraintTop_toBottomOf="@+id/my_title_tv" />
-
-
-
-        <ImageButton
-            android:id="@+id/my_setting_btn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="81dp"
-            android:layout_marginEnd="45dp"
-            android:background="@drawable/ic_settings"
-            app:layout_constraintBottom_toBottomOf="@id/my_title_tv"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.627"
-            app:layout_constraintStart_toEndOf="@id/my_title_tv"
-            app:layout_constraintTop_toTopOf="@+id/my_title_tv" />
-
-        <View
-            android:id="@+id/my_bottom_view"
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/my_layout">
-        </View>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/my_gift_list_rv"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginLeft="34dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="34dp"
-            android:layout_marginBottom="12dp"
-            android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="@+id/my_layout"
-            app:layout_constraintLeft_toLeftOf="@id/my_layout"
-            app:layout_constraintRight_toRightOf="@id/my_layout"
-            app:layout_constraintStart_toStartOf="@id/my_layout"
-            app:layout_constraintTop_toTopOf="@id/my_layout"
-            tools:listitem="@layout/item_my_recycler"
-            />
+            android:text="후기작성"
+            app:layout_constraintStart_toStartOf="@id/imageView7"
+            app:layout_constraintTop_toBottomOf="@id/imageView7" />
 
         <TextView
-            android:id="@+id/my_about_tv"
-            android:layout_width="0dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="53dp"
-            android:layout_marginEnd="241dp"
-            android:layout_marginBottom="216dp"
-            android:text="FROM BRIDGES"
-            android:textColor="@android:color/black"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/my_layout" />
+            android:layout_marginTop="8dp"
+            android:text="쿠폰함"
+            app:layout_constraintStart_toStartOf="@id/imageView9"
+            app:layout_constraintTop_toBottomOf="@id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="76dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="@+id/my_title_tv"
+            app:layout_constraintTop_toBottomOf="@+id/my_title_tv"
+            app:srcCompat="@drawable/pencil" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="77dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/my_title_tv"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:srcCompat="@drawable/coupon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="포인트"
+            app:layout_constraintStart_toStartOf="@id/imageView8"
+            app:layout_constraintTop_toBottomOf="@id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="76dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/my_title_tv"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:srcCompat="@drawable/cash" />
 
         <View
             android:id="@+id/my_line_view"
             android:layout_width="0dp"
             android:layout_height="3dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="236dp"
             android:background="#6C6C6C"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/my_about_tv" />
 
@@ -115,12 +97,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="255dp"
-            android:text="회원정보 수정"
+            android:text="사회적기업이란?"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/my_line_view" />
 
@@ -128,12 +111,13 @@
             android:id="@+id/user_notice_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:text="공지사항"
+            android:layout_marginTop="16dp"
+            android:text="사회적기업 모아보기"
             android:textAlignment="textStart"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@id/my_user_info_edit_tv"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/my_user_info_edit_tv"
             app:layout_constraintTop_toBottomOf="@+id/my_user_info_edit_tv" />
 
@@ -141,14 +125,31 @@
             android:id="@+id/my_customer_center_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:text="고객센터"
+            android:layout_marginTop="4dp"
+            android:text=""
             android:textAlignment="textStart"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@id/user_notice_tv"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/user_notice_tv"
             app:layout_constraintTop_toBottomOf="@id/user_notice_tv" />
+
+        <TextView
+            android:id="@+id/my_about_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="241dp"
+            android:text="FROM BRIDGES"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
             android:id="@+id/my_log_out_btn"
@@ -166,8 +167,10 @@
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/my_customer_center_tv" />
+            app:layout_constraintTop_toBottomOf="@id/my_customer_center_tv"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,4 +1,4 @@
-package com.example.o_ttae.ui.home
+package com.example.o_ttae.ui.login.home
 
 import android.os.Bundle
 import android.os.Handler

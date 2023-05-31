@@ -1,4 +1,4 @@
-package com.example.o_ttae.ui.home
+package com.example.o_ttae.ui.login.home
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
