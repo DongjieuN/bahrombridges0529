@@ -1,20 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="34dp"
+    android:paddingHorizontal="35dp"
     android:paddingTop="20dp">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/home_couple_product_rv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/home_couple_product_rv1"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="4dp"
         android:nestedScrollingEnabled="false"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home_couple_product_rv2"
+        tools:listitem="@layout/item_home_category_product" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_couple_product_rv2"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="4dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_couple_product_rv1"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:listitem="@layout/item_home_category_product" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -26,8 +41,8 @@
         android:paddingHorizontal="26dp"
         android:text="전체 보기"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_couple_product_rv" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_couple_product_rv1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,13 +8,27 @@
     android:paddingTop="20dp">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/price_product_rv"
-        android:layout_width="match_parent"
+        android:id="@+id/price_product_rv1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:nestedScrollingEnabled="false"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/price_product_rv2"
+        tools:listitem="@layout/item_home_category_product" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/price_product_rv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/price_product_rv1"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:listitem="@layout/item_home_category_product" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
