@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Grayscale_Blue">
+    android:background="#000000">
 
     <TextView
         android:id="@+id/on_boarding_title_tv"
@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:fontFamily="@font/cafe24_ohsquareair"
-        android:text="질문지를 통해"
+        android:text="다양한 사회적 기업의 물품을 찾고 싶다면?"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,30 +26,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/cafe24_ohsquare"
-        android:text="추천받기"
+        android:text="BRIDGES"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="@+id/on_boarding_title_tv"
         app:layout_constraintStart_toStartOf="@+id/on_boarding_title_tv"
         app:layout_constraintTop_toBottomOf="@+id/on_boarding_title_tv" />
 
     <ImageView
         android:id="@+id/on_boarding_image_iv"
-        android:layout_width="186dp"
-        android:layout_height="219dp"
+        android:layout_width="400dp"
+        android:layout_height="420dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="120dp"
         android:scaleType="fitXY"
         android:src="@drawable/on_boarding_first_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/on_boarding_bold_title_tv"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

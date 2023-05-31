@@ -43,32 +43,19 @@ class OnBoardingActivity : AppCompatActivity() {
         TabLayoutMediator(onBoardingTb, onBoardingVp) { tab, position ->
         }.attach()
 
+
         onBoardingVPAdapter.addFragment(
             OnBoardingFragment(
-                "질문지를 통해 사회적 기업 물품",
-                "추천받기",
-                R.drawable.all_look_btn_shape
-            )
-        )
-        onBoardingVPAdapter.addFragment(
-            OnBoardingFragment(
-                "추천 사회적 기업 물품",
-                "모아보기",
-                R.drawable.all_look_btn_shape
-            )
-        )
-        onBoardingVPAdapter.addFragment(
-            OnBoardingFragment(
-                "기부와 소비를 한번에!",
+                "다양한 사회적 기업의 물품을 찾고 싶다면?",
                 "BRIDGES",
-                R.drawable.all_look_btn_shape
+                R.drawable.on_boarding_first_img
             )
         )
 
         onBoardingVp.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                if (onBoardingVp.currentItem == 2) {
+                if (onBoardingVp.currentItem == 0) {
                     onBoardingStartBtn.visibility = View.VISIBLE
                 } else {
                     onBoardingStartBtn.visibility = View.INVISIBLE
