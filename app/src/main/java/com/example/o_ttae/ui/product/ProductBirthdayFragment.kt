@@ -1,5 +1,6 @@
 package com.example.o_ttae.ui.product
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,7 +18,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import java.util.ArrayList
 
-class ProductBirthdayFragment : Fragment() {
+class ProductBirthdayFragment : Fragment(), WeekProductRVAdapter.MyItemClickListener {
 
     private lateinit var productBirthdayWeekRv: RecyclerView
     private var weekProductData = ArrayList<WeekProduct>()
@@ -32,6 +33,7 @@ class ProductBirthdayFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.fragment_product_category, container, false)
+
 
         productBirthdayWeekRv = view.findViewById(R.id.product_category_week_rv)
         productCategoryPriceTb = view.findViewById(R.id.product_category_price_tb)
@@ -72,6 +74,8 @@ class ProductBirthdayFragment : Fragment() {
 
         // 어댑터와 데이터 리스트 연결
         val birthdayWeekProductRVAdapter = WeekProductRVAdapter(weekProductData)
+        birthdayWeekProductRVAdapter.setMyItemClickListener(this)
+
         productBirthdayWeekRv.layoutManager = LinearLayoutManager(
             context,
             LinearLayoutManager.HORIZONTAL, false
@@ -80,4 +84,12 @@ class ProductBirthdayFragment : Fragment() {
 
         return view
     }
+
+    override fun onItemClick(weekProduct: WeekProduct) {
+        val intent = Intent(requireContext(), ProductDetailActivity::class.java)
+        intent.putExtra("weekProduct", weekProduct)
+        startActivity(intent)
+    }
+
+
 }

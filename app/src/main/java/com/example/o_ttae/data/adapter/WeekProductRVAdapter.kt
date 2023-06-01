@@ -19,11 +19,6 @@ class WeekProductRVAdapter(private val weekProductList: ArrayList<WeekProduct>) 
         mItemClickListener = itemClickListener
     }
 
-    fun addItem(weekProduct: WeekProduct) {
-        weekProductList.add(weekProduct)
-        notifyDataSetChanged()
-    }
-
     override fun onCreateViewHolder(
         viewGroup: ViewGroup,
         viewType: Int
@@ -51,7 +46,11 @@ class WeekProductRVAdapter(private val weekProductList: ArrayList<WeekProduct>) 
             binding.itemWeekProductCaptionTv.text = weekProduct.caption
             binding.itemWeekProductNameTv.text = weekProduct.name
             binding.itemWeekProductImgIv.setImageResource(weekProduct.coverImg!!)
+
+            // Pass the clicked WeekProduct object to the item click listener
+            binding.root.setOnClickListener {
+                mItemClickListener.onItemClick(weekProduct)
+            }
         }
     }
-
 }

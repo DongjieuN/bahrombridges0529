@@ -1,5 +1,6 @@
 package com.example.o_ttae.ui.login.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -15,7 +16,7 @@ import com.example.o_ttae.ui.MainActivity
 import com.example.o_ttae.ui.product.ProductFragment
 import java.util.*
 
-class LightGiftFragment : Fragment() {
+class LightGiftFragment : Fragment(),ProductRVAdapter.MyItemClickListener {
 
     private var productData1 = ArrayList<Product>()
     private var productData2 = ArrayList<Product>()
@@ -51,6 +52,7 @@ class LightGiftFragment : Fragment() {
 
         // 어댑터와 데이터 리스트 연결
         val homeLightGiftProductRVAdapter1 = ProductRVAdapter(productData1)
+        homeLightGiftProductRVAdapter1.setMyItemClickListener(this)
         homeLightGiftProductRv1.layoutManager = LinearLayoutManager(
             context,
             LinearLayoutManager.VERTICAL, false
@@ -73,6 +75,11 @@ class LightGiftFragment : Fragment() {
         }
 
         return view
+    }
+    override fun onItemClick(Product: Product) {
+        val intent = Intent(requireContext(), ProductDetailActivity10::class.java)
+        intent.putExtra("Product",Product)
+        startActivity(intent)
     }
 
     // 이동할 카테고리 탭 전달

@@ -19,6 +19,7 @@ class ProductRVAdapter(private val productList: ArrayList<Product>) :
         mItemClickListener = itemClickListener
     }
 
+
     fun addItem(product: Product) {
         productList.add(product)
         notifyDataSetChanged()
@@ -52,6 +53,10 @@ class ProductRVAdapter(private val productList: ArrayList<Product>) :
             binding.itemProductNameTv.text = product.name
             binding.itemProductPriceTv.text = product.price
             binding.itemProductImgIv.setImageResource(product.coverImg!!)
+
+            binding.root.setOnClickListener {
+                mItemClickListener.onItemClick(product)
+            }
         }
     }
 }

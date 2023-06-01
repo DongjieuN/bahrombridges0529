@@ -1,5 +1,6 @@
 package com.example.o_ttae.ui.product
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -16,7 +17,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import java.util.ArrayList
 
-class ProductLightGiftFragment : Fragment() {
+class ProductLightGiftFragment : Fragment(),WeekProductRVAdapter.MyItemClickListener {
 
     private lateinit var productLightGiftWeekRv: RecyclerView
     private var weekProductData = ArrayList<WeekProduct>()
@@ -70,6 +71,7 @@ class ProductLightGiftFragment : Fragment() {
 
         // 어댑터와 데이터 리스트 연결
         val lightGiftWeekProductRVAdapter = WeekProductRVAdapter(weekProductData)
+            lightGiftWeekProductRVAdapter.setMyItemClickListener(this)
         productLightGiftWeekRv.layoutManager = LinearLayoutManager(
             context,
             LinearLayoutManager.HORIZONTAL, false
@@ -77,5 +79,10 @@ class ProductLightGiftFragment : Fragment() {
         productLightGiftWeekRv.adapter = lightGiftWeekProductRVAdapter
 
         return view
+    }
+    override fun onItemClick(weekProduct: WeekProduct) {
+        val intent = Intent(requireContext(), ProductDetailActivity2::class.java)
+        intent.putExtra("weekProduct", weekProduct)
+        startActivity(intent)
     }
 }

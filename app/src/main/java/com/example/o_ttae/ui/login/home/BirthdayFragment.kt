@@ -1,5 +1,6 @@
 package com.example.o_ttae.ui.login.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,9 +14,10 @@ import com.example.o_ttae.data.adapter.ProductRVAdapter
 import com.example.o_ttae.data.model.Product
 import com.example.o_ttae.ui.MainActivity
 import com.example.o_ttae.ui.product.ProductFragment
+import com.example.o_ttae.ui.product.price.ProductDetailActivity6
 import java.util.*
 
-class BirthdayFragment : Fragment() {
+class BirthdayFragment : Fragment(), ProductRVAdapter.MyItemClickListener {
 
     private var productData1 = ArrayList<Product>()
     private var productData2 = ArrayList<Product>()
@@ -51,6 +53,7 @@ class BirthdayFragment : Fragment() {
 
         // 어댑터와 데이터 리스트 연결
         val homeBirthdayProductRVAdapter1 = ProductRVAdapter(productData1)
+        homeBirthdayProductRVAdapter1.setMyItemClickListener(this)
         homeBirthdayProductRv1.layoutManager = LinearLayoutManager(
             context,
             LinearLayoutManager.VERTICAL, false
@@ -75,6 +78,12 @@ class BirthdayFragment : Fragment() {
         return view
     }
 
+    override fun onItemClick(Product: Product) {
+        val intent = Intent(requireContext(), ProductDetailActivity9::class.java)
+        intent.putExtra("Product",Product)
+        startActivity(intent)
+    }
+
     // 이동할 카테고리 탭 전달
     private fun sendData(tabPosition: Int) {
         var pref = this.activity?.getPreferences(0)
@@ -82,5 +91,7 @@ class BirthdayFragment : Fragment() {
 
         editor?.putInt("tabPosition", tabPosition)?.apply()
     }
+
+
 }
 

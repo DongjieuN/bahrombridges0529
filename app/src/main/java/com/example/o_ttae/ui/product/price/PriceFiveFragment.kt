@@ -1,5 +1,6 @@
 package com.example.o_ttae.ui.product.price // 취약계층 지원
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,7 +13,7 @@ import com.example.o_ttae.data.adapter.ProductRVAdapter
 import com.example.o_ttae.R
 import java.util.ArrayList
 
-class PriceFiveFragment : Fragment() {
+class PriceFiveFragment : Fragment(),ProductRVAdapter.MyItemClickListener {
 
     private var productData1 = ArrayList<Product>()
     private var productData2 = ArrayList<Product>()
@@ -44,6 +45,7 @@ class PriceFiveFragment : Fragment() {
 
         // Set up the adapter and layout manager for priceProductRv1
         val priceProductRvAdapter1 = ProductRVAdapter(productData1)
+        priceProductRvAdapter1.setMyItemClickListener(this)
         priceFiveProductRv1.layoutManager = LinearLayoutManager(context)
         priceFiveProductRv1.adapter = priceProductRvAdapter1
 
@@ -53,5 +55,11 @@ class PriceFiveFragment : Fragment() {
         priceFiveProductRv2.adapter = priceProductRvAdapter2
 
         return view
+    }
+
+    override fun onItemClick(Product: Product) {
+        val intent = Intent(requireContext(), ProductDetailActivity6::class.java)
+        intent.putExtra("Product",Product)
+        startActivity(intent)
     }
 }
