@@ -1,23 +1,35 @@
 package com.example.o_ttae.ui.login.home
 
+
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
 import com.example.o_ttae.R
-import com.example.o_ttae.data.model.Product
+import com.example.o_ttae.data.model.WeekProduct
+import kotlinx.android.synthetic.main.activity_product_detail.*
+import kotlinx.android.synthetic.main.fragment_my.*
 
 
+class ProductDetailActivity9 : AppCompatActivity() {
 
-class ProductDetailActivity9: AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail9)
 
-        // Get the data from the previous activity
-        val Product = intent.getParcelableExtra<Product>("Product")
+        val weekProduct = intent.getParcelableExtra<WeekProduct>("weekProduct")
         // Use the data to populate the views in the product detail activity
-        // ...
 
+        seller_image.setOnClickListener {
+            val url = "http://www.dongplus.com/"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
+
+        // ...
     }
 }

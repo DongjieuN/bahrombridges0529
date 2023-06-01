@@ -81,7 +81,7 @@ class ProductLightGiftFragment : Fragment(),WeekProductRVAdapter.MyItemClickList
         return view
     }
     override fun onItemClick(weekProduct: WeekProduct) {
-        val intent = Intent(requireContext(), ProductDetailActivity2::class.java)
+        val intent = Intent(requireContext(), ProductDetailActivity3::class.java)
         intent.putExtra("weekProduct", weekProduct)
         startActivity(intent)
     }

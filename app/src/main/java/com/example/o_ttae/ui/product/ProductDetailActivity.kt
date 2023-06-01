@@ -23,7 +23,7 @@ class ProductDetailActivity : AppCompatActivity() {
         val weekProduct = intent.getParcelableExtra<WeekProduct>("weekProduct")
         // Use the data to populate the views in the product detail activity
 
-        imageView5.setOnClickListener {
+        seller_image.setOnClickListener {
             val url = "http://www.dongplus.com/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)

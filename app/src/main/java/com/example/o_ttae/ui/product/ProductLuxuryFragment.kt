@@ -82,7 +82,7 @@ class ProductLuxuryFragment : Fragment(),WeekProductRVAdapter.MyItemClickListene
     }
 
     override fun onItemClick(weekProduct: WeekProduct) {
-        val intent = Intent(requireContext(), ProductDetailActivity3::class.java)
+        val intent = Intent(requireContext(), ProductDetailActivity4::class.java)
         intent.putExtra("weekProduct", weekProduct)
         startActivity(intent)
     }
