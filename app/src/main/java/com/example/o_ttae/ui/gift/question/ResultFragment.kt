@@ -79,15 +79,15 @@ class ResultFragment : Fragment() {
 
         // result로 조건문 작성 -> 결과지 세팅
         when (result) {
-            // 1. 어색, 집좋아, 허약, 보부상, 한식 -> 보드게임
+            // 1. 어색, 집좋아, 허약, 보부상, 한식
             // 10100
             "10100" -> {
                 loadData()
 
                 // 보드게임
-                friendItem.text = "프로 집콕러 " + friendName + " 님을 위해\n" + "보드게임 어때?"
-                productName.text = "상프앙 / ARCHI MEMORY CARD GAME"
-                price.text = "13,000"
+                friendItem.text = "집콕이 좋은 " + friendName + "님을 위한\n" + "멸종위기동물 보드게임 BRIDGES!"
+                productName.text = "스프링샤인 / 멸종위기동물 보드게임"
+                price.text = "34,000"
                 imgTemp = R.drawable.result_board_game1_img
                 resultImg.setImageResource(R.drawable.result_board_game2_img)
                 giftImg.setImageResource(R.drawable.result_board_game1_img)
@@ -96,53 +96,53 @@ class ResultFragment : Fragment() {
                 resultItemIntro.text = getString(R.string.result_item_board_game_intro)
             }
 
-            // 2. E, 밖, 운동, 보부상, 양식 -> 운동인을 위한 운동가방
+            // 2. E, 밖, 운동, 보부상, 양식
             // 01001
             "01001" -> {
                 loadData()
 
-                // 운동가방
-                friendItem.text = "보부상 운동인 " + friendName + " 님을 위해\n" + "운동가방 어때?"
-                productName.text = "시랜드 / Hero_Black"
-                price.text = "34,000"
+                // 대형가방
+                friendItem.text = "보부상 프로 외출러 " + friendName + "님을 위한\n" + "자연미감 고급 자수 가방 BRIDGES!"
+                productName.text = "자연미감 / 자연미감 고급 자수 가방"
+                price.text = "24,000"
                 imgTemp = R.drawable.result_sports_bag1_img
                 resultImg.setImageResource(R.drawable.result_sports_bag2_img)
                 giftImg.setImageResource(R.drawable.result_sports_bag1_img)
-                friendItemComment = friendName + " 님을 위한 운동가방"
+                friendItemComment = friendName + " 님을 위한 고급 자수 대형 가방"
                 resultItemBg.setImageResource(R.drawable.result_sports_bag3_img)
                 resultItemIntro.text = getString(R.string.result_item_sports_bag_intro)
             }
 
-            // 3. I, 집, 운동, 미니멀, 양식 -> 단백질을 챙기고 집에만 있는 운동인을 위한 치킨 (배민 쿠폰)
+            // 3. I, 집, 운동, 미니멀, 양식
             // 10011
             "10011" -> {
                 loadData()
 
-                // 치킨 기프티콘
-                friendItem.text = "단백질이 중요한 내향형 운동인 " + friendName + " 님을 위해\n" + "치킨 기프티콘 어때?"
-                productName.text = "bhc 치킨 "
-                price.text = "21,000"
+                // 복분자원
+                friendItem.text = "건강이 중요한 내향인 " + friendName + "님을 위한\n" + "해다미 복분자원 BRIDGES!"
+                productName.text = "사회복지법인 다운회 아름다운 / 해다미 복분자원 "
+                price.text = "26,000"
                 imgTemp = R.drawable.result_chicken1_img
                 resultImg.setImageResource(R.drawable.result_chicken2_img)
                 giftImg.setImageResource(R.drawable.result_chicken1_img)
-                friendItemComment = friendName + " 님을 위한 치킨 기프티콘"
+                friendItemComment = friendName + " 님을 위한 건강에 좋은 복분자원"
                 resultItemBg.setImageResource(R.drawable.result_chicken3_img)
                 resultItemIntro.text = getString(R.string.result_item_chicken_intro)
             }
 
-            // 4. E, 밖, 허약, 미니멀, 한식 -> 밖에 돌아다니는 걸 좋아하지만 허약한 친구를 위한 비타민
+            // 4. E, 밖, 허약, 미니멀, 한식 ->
             // 01110
             "01110" -> {
                 loadData()
 
-                // 비타민
-                friendItem.text = "밖에 돌아다니는 걸 좋아하지만 허약한\n" + friendName + " 님을 위해 비타민 어때?"
-                productName.text = "바이너랩 / 글로시 30포 레모나맛"
-                price.text = "21,000"
+                // 에너지바
+                friendItem.text = "외출이 좋지만 운동은 싫은 " + friendName + "님을 위한\n" + "13가지 견과류 수제간식 에너지바 BRIDGES!"
+                productName.text = "사단법인 한국복지나눔 / 13가지 견과류 수제간식 에너지바 35g 20개입 1박스"
+                price.text = "27,500"
                 imgTemp = R.drawable.result_vitamin1_img
                 resultImg.setImageResource(R.drawable.result_vitamin2_img)
                 giftImg.setImageResource(R.drawable.result_vitamin1_img)
-                friendItemComment = friendName + " 님을 위한 비타민"
+                friendItemComment = friendName + " 님을 위한 견과류 에너지바"
                 resultItemBg.setImageResource(R.drawable.result_vitamin3_img)
                 resultItemIntro.text = getString(R.string.result_item_vitamin_intro)
             }
@@ -153,9 +153,9 @@ class ResultFragment : Fragment() {
                 loadData()
 
                 // 보조배터리
-                friendItem.text = "밖을 잘 돌아다니는 보부상 " + friendName + " 님을 위해\n" + "보조배터리  어때?"
-                productName.text = "어프어프 / CLEANER PUNI-BLACK"
-                price.text = "13,000"
+                friendItem.text = "친구도 많고 외출도 자주! " + friendName + "님을 위한\n" + "일체형 보조배터리 BRIDGES!"
+                productName.text = "오피스배재 / 플레오맥스 일체형 보조배터리 C타입 5000mAH"
+                price.text = "14,200"
                 imgTemp = R.drawable.result_battery1_img
                 resultImg.setImageResource(R.drawable.result_battery2_img)
                 giftImg.setImageResource(R.drawable.result_battery1_img)
@@ -170,13 +170,13 @@ class ResultFragment : Fragment() {
                 loadData()
 
                 // 계절밥상
-                friendItem.text = "외출을 자주 하는 한식파 " + friendName + " 님을 위해\n" + "계절밥상 상품권 어때?"
-                productName.text = "계절밥상 상품권"
-                price.text = "21,000"
+                friendItem.text = "건강을 생각하는 한식파 " + friendName + "님을 위한\n" + "한식 도시락 6종류 BRIDGES!"
+                productName.text = "아삭-아주 건강한 속삭임 / 한식 도시락 6종류"
+                price.text = "8,000"
                 imgTemp = R.drawable.result_food1_img
                 resultImg.setImageResource(R.drawable.result_food2_img)
                 giftImg.setImageResource(R.drawable.result_food1_img)
-                friendItemComment = friendName + " 님을 위한 계절밥상 상품권"
+                friendItemComment = friendName + " 님을 위한 한식 도시락 6종류"
                 resultItemBg.setImageResource(R.drawable.result_food3_img)
                 resultItemIntro.text = getString(R.string.result_item_food_intro)
             }
@@ -186,42 +186,43 @@ class ResultFragment : Fragment() {
             "10010" -> {
                 loadData()
 
-                // 덤벨
-                friendItem.text = "운동을 좋아하는 내향인 " + friendName + " 님을 위해\n" + "덤벨 어때?"
-                productName.text = "와이벨 / Y-Bell 와이벨 XS (4.5kg)"
-                imgTemp = R.drawable.result_fitness1_img
-                price.text = "31,000"
-                resultImg.setImageResource(R.drawable.result_fitness2_img)
-                giftImg.setImageResource(R.drawable.result_fitness1_img)
-                friendItemComment = friendName + " 님을 위한 덤벨"
-                resultItemBg.setImageResource(R.drawable.result_fitness3_img)
-                resultItemIntro.text = getString(R.string.result_item_fitness_intro)
-            }
-
-            // 8. I, 집, 허약, 미니멀, 양식 -> 집에서 노는 친구를 위한 미니멀한 찻잔 세트(그릇세트) 양식메뉴에도 어울려!
-            // 10111
-            "10111" -> {
-                loadData()
-
                 // 찻잔세트
-                friendItem.text = "미니멀리스트 내향인 " + friendName + " 님을 위해\n" + "찻잔세트 어때?"
-                productName.text = "1537 / 컵 앤 소서 - 커피잔 세트 (3종)"
-                price.text = "21,000"
+                friendItem.text = "미니멀리스트 내향인 " + friendName + "님을 위한\n" + "한글 패턴 후식잔(찻잔) 세트 BRIDGES!"
+                productName.text = "소로시 / 한글 패턴 후식잔(찻잔) 세트"
+                price.text = "20,000"
                 imgTemp = R.drawable.result_teaset1_img
                 resultImg.setImageResource(R.drawable.result_teaset2_img)
                 giftImg.setImageResource(R.drawable.result_teaset1_img)
                 friendItemComment = friendName + " 님을 위한 찻잔세트"
                 resultItemBg.setImageResource(R.drawable.result_teaset3_img)
                 resultItemIntro.text = getString(R.string.result_item_teaset_intro)
+
+            }
+
+            // 8. I, 집, 허약, 미니멀, 양식
+            // 10111
+            "10111" -> {
+                loadData()
+
+                // 카스테라
+                friendItem.text = "집도 좋고 빵도 좋은" + friendName + "님을 위한\n" + "우리쌀 카스테라 BRIDGES!"
+                productName.text = "경주제과 / [100% 국산쌀] 우리쌀 카스테라 2개입"
+                imgTemp = R.drawable.result_fitness1_img
+                price.text = "10,000"
+                resultImg.setImageResource(R.drawable.result_fitness2_img)
+                giftImg.setImageResource(R.drawable.result_fitness1_img)
+                friendItemComment = friendName + " 님을 위한 우리쌀 카스테라"
+                resultItemBg.setImageResource(R.drawable.result_fitness3_img)
+                resultItemIntro.text = getString(R.string.result_item_fitness_intro)
             }
 
             else -> {
                 loadData()
 
                 // 아무거나 넣기
-                friendItem.text = "미니멀리스트 내향인 " + friendName + " 님을 위해\n" + "찻잔세트 어때?"
-                productName.text = "설정 X"
-                price.text = "21,000"
+                friendItem.text = "미니멀리스트 내향인 " + friendName + "님을 위한\n" + "한글 패턴 후식잔(찻잔) 세트 BRIDGES!"
+                productName.text = "소로시 / 한글 패턴 후식잔(찻잔) 세트"
+                price.text = "20,000"
                 imgTemp = R.drawable.result_teaset1_img
                 resultImg.setImageResource(R.drawable.result_teaset2_img)
                 giftImg.setImageResource(R.drawable.result_teaset1_img)
