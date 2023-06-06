@@ -69,12 +69,14 @@ class TasteFragment : Fragment(), OnMapReadyCallback {
         marker.position = target
         marker.icon = OverlayImage.fromResource(R.drawable.marker_icon) // 마커 아이콘 설정
         marker.map = naverMap
+        marker.captionText = "아름다운가게 공릉점"
 
 
         val marker2 = Marker()
         marker2.position = target1
         marker2.icon = OverlayImage.fromResource(R.drawable.marker_icon1) // 마커 아이콘 설정
         marker2.map = naverMap
+        marker2.captionText = "스토어36.5 노원점" // 마커에 타이틀 설정
 
 
     }
