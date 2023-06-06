@@ -201,19 +201,7 @@
             android:layout_marginVertical="22dp"
             android:background="@color/black" />
 
-        <Button
-            android:id="@+id/login_reg_ask_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:maxLines="1"
-            android:paddingStart="18dp"
-            android:paddingEnd="36dp"
-            android:text=" 로그인 문의"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            tools:ignore="TouchTargetSizeCheck" />
+
 
     </LinearLayout>
 
